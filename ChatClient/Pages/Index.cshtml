@@ -1,0 +1,48 @@
+﻿@page
+
+<div class="container">
+    <div id="authform" class="auth" style="display:block">
+        <div class="col-6">
+            Login..........<input type="text" id="login" />
+            <br />
+            <input type="button" id="authButton" value="authorize" />
+        </div>
+    </div>
+
+    <div id="chatroomform" style="display:none">
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                <ul id="roomsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id ="chatform" class="chat" style="display:none">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                Message:
+                <br />
+                <input type="text" id="messageInput" />
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">&nbsp;</div>
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script src="~/js/chatroom.js"></script>
+<script src="~/js/authorization.js"></script>
